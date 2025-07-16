@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Content editable placeholder styling */
+.content-editable-placeholder:empty:before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+/* Ensure rich text formatting is preserved */
+.content-editable-placeholder * {
+  display: inline;
+}
